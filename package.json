@@ -1,0 +1,23 @@
+{
+  "name": "@frontal/ts-linter",
+  "version": "0.1.0",
+  "bin": {
+    "frontal-ts-linter": "scripts/main.js"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node scripts/main.js"
+  },
+  "dependencies": {
+    "commander": "^10.0.0",
+    "zod": "^3.22.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
+
