@@ -6,6 +6,9 @@
 
 # @frontal/ts-linter
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Bun](https://img.shields.io/badge/Bun-%23000000.svg?style=flat&logo=bun&logoColor=white)](https://bun.sh)
+
 An opinionated TypeScript linting CLI built on top of **Biome**. It comes with
 Zod for option validation, Commander for argument parsing, and a zero‑config
 experience that auto‑detects a `biome.json` file or falls back to a minimal
