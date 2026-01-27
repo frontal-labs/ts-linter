@@ -1,0 +1,6 @@
+[install]
+# check for updates
+# auto = "latest"
+
+[test]
+# ...
