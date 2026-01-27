@@ -1,0 +1,15 @@
+{
+  "$schema": "https://biomejs.dev/schemas/biome.json",
+  "formatter": {
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "quoteStyle": "single",
+    "trailingComma": "all"
+  },
+  "linter": {
+    "rules": {
+      "$comment": "Custom rules can be added here"
+    }
+  }
+}
+
