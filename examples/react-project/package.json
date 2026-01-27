@@ -1,0 +1,7 @@
+{
+    "name": "example-react",
+    "private": true,
+    "scripts": {
+        "lint": "ts-linter check --ruleset react-style"
+    }
+}

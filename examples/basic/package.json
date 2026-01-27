@@ -1,0 +1,11 @@
+{
+    "name": "example-basic",
+    "private": true,
+    "scripts": {
+        "lint": "ts-linter check",
+        "fix": "ts-linter fix"
+    },
+    "devDependencies": {
+        "@frontal/ts-linter": "latest"
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "name": "example-strict",
+    "private": true,
+    "scripts": {
+        "lint": "ts-linter check --ruleset strict-typing"
+    }
+}
