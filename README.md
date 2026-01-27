@@ -1,3 +1,9 @@
+<picture>
+ <source srcset="./assets/banner-dark.png" media="(prefers-color-scheme: dark)">
+ <source srcset="./assets/banner-dark.png" media="(prefers-color-scheme: light)">
+ <img src="./assets/banner-dark.png" alt="IAM Banner">
+</picture>
+
 # @frontal/ts-linter
 
 An opinionated TypeScript linting CLI built on top of **Biome**. It comes with
@@ -11,25 +17,61 @@ configuration.
 * **fix** – Apply Biome fixes.
 * **format** – Reformat files.
 * **init** – Generate a minimal `biome.json` if one does not exist.
+* **watch** – Watch mode with live feedback.
+* **ci** – CI-optimized output with structured formats.
+* **rulesets** – List available rulesets.
 
-All commands work in the current working directory.
-
-## Install
+## Installation
 
 ```bash
-npm i -g @frontal/ts-linter
+# Locally in a project
+bun add -D @frontal/ts-linter
+
+# Or globally
+bun add -g @frontal/ts-linter
 ```
 
 ## Usage
 
 ```bash
-frontal-ts-linter check
-frontal-ts-linter fix
-frontal-ts-linter format
-frontal-ts-linter init
+# Initialize configuration
+ts-linter init --ruleset strict-typing
+
+# Check for lint issues
+ts-linter check
+
+# Auto-fix issues
+ts-linter fix
+
+# Reformat code
+ts-linter format
+
+# List available rulesets
+ts-linter rulesets
+```
+
+## Publishing
+
+This project uses **Changesets** for version management and publishes to **GitHub Packages**.
+
+### Prerequisites
+Ensure you have a `GITHUB_TOKEN` with `packages:write` permission.
+
+### Steps to Release
+1. Run `bun run changeset` to create a new version entry.
+2. Commit the changeset file.
+3. The GitHub Action will automatically create a version PR or publish on merge to `main`.
+
+### Manual Publish via CLI
+If you need to publish manually:
+```bash
+# Authenticate with GH CLI
+gh auth login --scopes write:packages
+
+# Publish
+bun run release
 ```
 
 ## License
 
 MIT
-

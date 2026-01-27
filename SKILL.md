@@ -1,8 +1,3 @@
----
-name: frontal-ts-linter
-description: A Biome-powered TypeScript linter CLI with Zod validation and zero-config DX.
----
-
 ## Overview
 
 The **frontal-ts-linter** skill bundles a fast, opinionated TypeScript linting
@@ -24,10 +19,10 @@ globally with `npm i -g @frontal/ts-linter`.
 ## Usage
 
 ```bash
-frontal-ts-linter check          # lint current directory
-frontal-ts-linter fix            # lint and auto‑fix
-frontal-ts-linter format         # format files
-frontal-ts-linter init           # create biome.json with defaults
+ts-linter check          # lint current directory
+ts-linter fix            # lint and auto‑fix
+ts-linter format         # format files
+ts-linter init           # create biome.json with defaults
 ```
 
 ## Resources
@@ -37,9 +32,6 @@ frontal-ts-linter init           # create biome.json with defaults
 
 ### references/
 `references/biome_defaults.json` – Default Biome config used by `init`.
-
-### assets/
-None.
 
 ---
 
