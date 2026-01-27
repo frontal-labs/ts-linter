@@ -1,0 +1,26 @@
+{
+    "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+    "root": true,
+    "extends": [
+        "./config/core/biome.jsonc",
+        "./config/react/biome.jsonc",
+        "./config/next/biome.jsonc"
+    ],
+    "linter": {
+        "rules": {
+            "suspicious": {
+                // Needed for CLI
+                "noConsole": "off"
+            }
+        }
+    },
+    "files": {
+        "includes": [
+            "**/*",
+            "!config",
+            "!node_modules",
+            "!scripts",
+            "!test"
+        ]
+    }
+}
