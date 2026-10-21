@@ -1,10 +1,6 @@
-<picture>
- <source srcset="./assets/banner-dark.png" media="(prefers-color-scheme: dark)">
- <source srcset="./assets/banner-dark.png" media="(prefers-color-scheme: light)">
- <img src="./assets/banner-dark.png" alt="IAM Banner">
-</picture>
+# Frontal TS Linter
 
-# @frontal/ts-linter
+![Frontal Banner](./banner.jpg)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Bun](https://img.shields.io/badge/Bun-%23000000.svg?style=flat&logo=bun&logoColor=white)](https://bun.sh)
